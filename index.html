@@ -13,25 +13,20 @@
       arjs="sourceType: webcam; debugUIEnabled: false;">
       
       <a-assets>
-        <a-asset-item id="phoenix" src="stylized_flying_bee_bird_rigged.glb"></a-asset-item>
+        <a-asset-item id="bird" src="stylized_flying_bee_bird_rigged.glb"></a-asset-item>
       </a-assets>
 
       <a-marker preset="hiro">
         <a-entity 
-          gltf-model="#phoenix" 
-          scale="0.001 0.001 0.001" 
-          position="0 0 0"
+          gltf-model="#bird" 
+          scale="0.5 0.5 0.5" 
+          position="0 0.5 0"
+          rotation="0 0 0"
           animation-mixer="clip: *; loop: repeat">
         </a-entity>
       </a-marker>
 
-      <a-entity 
-        gltf-model="#phoenix" 
-        scale="0.0005 0.0005 0.0005" 
-        position="0 0.5 0"
-        rotation="0 0 0"
-        animation-mixer="clip: *; loop: repeat">
-      </a-entity>
+      <a-entity camera></a-entity>
     </a-scene>
   </body>
 </html>
